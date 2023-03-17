@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sound Gardens - Painel Administrativo</title>
+    <title>Sound Gardens - Reservas</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -55,57 +55,29 @@
             </aside>
             <main class="col-9  p-5">
                 <div class="my-5">
-                    <h1>Gerenciamento de eventos</h1>
-
-                    <a href="cadastro-evento.html" class="btn btn-primary">Novo Evento</a>
+                    <h1>Reservas</h1>
+                    <p id="nome-evento-reserva">Evento</p>
                 </div>
                 <div class="bd-example">
                     <table class="table" id="tableAdm">
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">Data</th>
-                                <th scope="col">Titulo</th>
-                                <th scope="col">Atrações</th>
-                                <th scope="col">Ações</th>
+                                <th scope="col">Nome</th>
+                                <th scope="col">E-mail</th>
+                                <th scope="col">Qtd. de Tickets Reservados</th>
+                                <th scope="col">ID do Ticket</th>
                             </tr>
                         </thead>
-                    <tbody id="cardAdmin">
+                    <tbody id="card-reserva">
                             <tr>
                                 <th scope="row">1</th>
-                                <td>05/03/2022 20:00</td>
-                                <td>Festival Coala</td>
-                                <td>Miley Cyrus, Liniker, Smashing Pumpkins</td>
-                                <td>
-                                    <a href="reservas.html" class="btn btn-dark">ver reservas</a>
-                                    <a href="editar-evento.html" class="btn btn-secondary">editar</a>
-                                    <a href="excluir-evento.html" class="btn btn-danger">excluir</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>05/03/2022 20:00</td>
-                                <td>Indie Fest</td>
-                                <td>Arctic Monkeys, The Kooks, Hiatus Kaiyote</td>
-                                <td>
-                                    <a href="reservas.html" class="btn btn-dark">ver reservas</a>
-                                    <a href="editar-evento.html" class="btn btn-secondary">editar</a>
-                                    <a href="excluir-evento.html" class="btn btn-danger">excluir</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>05/03/2022 20:00</td>
-                                <td>Bourbon Jazz Festival</td>
-                                <td>Esperanza Spalding, Zimbo Trio, Serial Funkers</td>
-                                <td>
-                                    <a href="reservas.html" class="btn btn-dark">ver reservas</a>
-                                    <a href="editar-evento.html" class="btn btn-secondary">editar</a>
-                                    <a href="excluir-evento.html" class="btn btn-danger">excluir</a>
-                                </td>
+                                <td>Aline</td>
+                                <td>aline@aline.com</td>
+                                <td>10</td>
+                                <td>262626262626262626262</td>
                             </tr>
                         </tbody>
-
                     </table>
                 </div>
             </main>
@@ -114,7 +86,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
-    <script src="js/admin.js"></script>
+    <script src="js/reservas.js"></script>
 </body>
 
 </html>

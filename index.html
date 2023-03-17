@@ -18,22 +18,24 @@
     <main>
         <section class="full d-flex justify-content-center align-items-center"
             style="background-color: #F8BBD0; color: #fff">
-            <div class="text-center">
-                <h1>Adicione um banner maneiro aqui</h1>
-            </div>
+                <div class="banner" >
+                    <img src="img/arcticMonkeys.jpg" width="65%" height="80%">
+                    <img src="img/Hiatus-Kaiyote.jpg" width="65%" height="80%">
+                    <img src="img/the-kooks-banner.jpg" width="65%" height="80%">
+                </div>
         </section>
         <section class="full">
             <div class="container text-center">
                 <h2>Próximos eventos</h2>
             </div>
-            <div class="container d-flex justify-content-center align-items-center">
+            <div id="card" class="container d-flex justify-content-center align-items-center">
                 <article class="evento card p-5 m-3">
                     <h2>nome do evento - 05/03/2022</h2>
                     <h4>Arctic Monkeys, The Kooks, Hiatus Kaiyote</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro aperiam sunt quo similique,
                         dolorum consectetur inventore ipsam, officiis neque natus eius harum alias quidem. Possimus
                         nobis in inventore tenetur asperiores.</p>
-                    <a href="#" class="btn btn-primary">reservar ingresso</a>
+                    <a href="#" class="btn btn-primary" id="reserva">reservar ingresso</a>
                 </article>
                 <article class="evento card p-5 m-3">
                     <h2>nome do evento - 05/03/2022</h2>
@@ -41,7 +43,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro aperiam sunt quo similique,
                         dolorum consectetur inventore ipsam, officiis neque natus eius harum alias quidem. Possimus
                         nobis in inventore tenetur asperiores.</p>
-                    <a href="#" class="btn btn-primary">reservar ingresso</a>
+                    <a href="#" class="btn btn-primary" id="reserva">reservar ingresso</a>
                 </article>
                 <article class="evento card p-5 m-3">
                     <h2>nome do evento - 05/03/2022</h2>
@@ -49,7 +51,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro aperiam sunt quo similique,
                         dolorum consectetur inventore ipsam, officiis neque natus eius harum alias quidem. Possimus
                         nobis in inventore tenetur asperiores.</p>
-                    <a href="#" class="btn btn-primary">reservar ingresso</a>
+                    <a href="#" class="btn btn-primary" id="reserva">reservar ingresso</a>
                 </article>
             </div>
             <div class="container text-center">
@@ -85,7 +87,39 @@
                 </div>
             </div>
         </section>
+        <div id="open-modal" class="hide">
+            <div id="fade" class="hide">
+            <div class="my-5" id="modal">
+            <div id="menu-res">
+                <h1 id="res">Reserva</h1>
+                <button id="buttonexit">X</button>
+            </div>
+            <div>
+                <p id="eventDetailName">evento</p>    
+        </div>
+        </div>
+        <div>
+            <form class="col-9 w-100" id="form">
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="name" aria-describedby="nome">
+                </div>
+                <div class="mb-3">
+                    <label for="banner" class="form-label">E-mail</label>
+                    <input type="text" class="form-control" id="email" aria-describedby="banner">
+                </div>
 
+                <div class="mb-3">
+                    <label for="lotacao" class="form-label">Quantidade de Ingressos</label>
+                    <input type="number" class="form-control" id="tickets" aria-describedby="lotacao">
+                </div>
+                <div class="d-flex w-100">
+                    <button type="submit" class="hover btn btn-primary m-2 " id="btreserva">Enviar Reserva</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
     </main>
     <footer>
         <div class="container d-flex justify-content-center align-items-center">
@@ -104,6 +138,7 @@
             </nav>
         </div>
     </footer>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
